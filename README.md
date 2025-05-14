@@ -13,8 +13,8 @@ This repository contains the implementation of my final project, which focuses o
 
 - **Programming Language**: PHP
 - **Database**: MySQL
-- **Framework**: [Specify if any, e.g., Laravel, CodeIgniter]
-- **Additional Libraries**: [Specify if any, e.g., TCPDF for PDF generation]
+- **Framework**: *None* (vanilla PHP used)
+- **Additional Libraries**: *None specified* (can be added based on future improvements)
 
 ## Installation
 
@@ -22,36 +22,55 @@ This repository contains the implementation of my final project, which focuses o
    ```bash
    git clone https://github.com/kepergok/Final-Project.git
    ```
+
 2. **Database Configuration**:
    - Create a new MySQL database.
-   - Import the SQL file from the `database/` folder into the newly created database.
+   - Import the SQL file located in the `database/` folder into the newly created database using phpMyAdmin or MySQL CLI.
+
 3. **Application Configuration**:
-   - Adjust database connection settings in the configuration file (e.g., `config.php` or as per your project structure).
+   - Update the database connection settings (host, username, password, database name) in the configuration file, typically found in `config.php`.
+
 4. **Run the Application**:
-   - Ensure the web server (e.g., Apache) and MySQL server are running.
-   - Access the application via `http://localhost/Final-Project/MAUT_Application` or the directory where you placed this project.
+   - Ensure your local server (e.g., XAMPP, Laragon) is running Apache and MySQL.
+   - Place the project folder inside the web root directory (e.g., `htdocs` for XAMPP).
+   - Open your browser and go to:
+     ```
+     http://localhost/Final-Project/MAUT_Application
+     ```
 
 ## Usage
 
-1. **Login**:
-   - Use default credentials or create a new account to access the system.
-2. **Data Management**:
-   - Add, update, or delete teacher data and evaluation criteria through the provided interface.
-3. **Performance Evaluation**:
-   - Evaluate teacher performance by entering scores for each criterion.
-   - The system calculates the final score using the MAUT method.
-4. **Reports**:
-   - View and download performance evaluation results as reports.
+1. **Login**  
+   Use the following credentials to access the system:
+   - **Username**: `admin`  
+   - **Password**: `ps man1bkt`
+
+2. **Data Management**  
+   - Add, edit, or delete teacher data and evaluation criteria through the interface.
+
+3. **Performance Evaluation**  
+   - Perform teacher evaluations by entering scores for each criterion.
+   - The system will calculate the final result using the MAUT method.
+
+4. **Reports**  
+   - View or download teacher evaluation results as reports.
+
+## Repository Structure
 
 ```
-
-- **MAUT_Application/**: Contains the application source code.
-- **database/**: Contains the SQL file for database initialization.
-- **README.md**: This file.
+- MAUT_Application/      # Application source code
+- database/              # Contains SQL file for initializing the database
+- README.md              # Project documentation
+```
 
 ## Contribution
 
-Contributions to this project are welcome. Please create an *issue* to report bugs or request new features. You can also fork this repository and submit a *pull request* with your proposed changes.
+Contributions are welcome! If you'd like to improve this project:
+- Fork the repository
+- Make your changes
+- Create a pull request
+
+Or open an issue to report bugs or suggest enhancements.
 
 ## License
 
@@ -60,4 +79,4 @@ See the [`LICENSE`](./LICENSE) file for more details.
 
 ---
 
-Hope this README helps you better understand and use this project!
+*Thank you for checking out this project. I hope it helps others who want to learn about multi-criteria decision-making with PHP!*
