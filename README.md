@@ -43,20 +43,6 @@ This repository contains the implementation of my final project, which focuses o
 4. **Reports**:
    - View and download performance evaluation results as reports.
 
-## Directory Structure
-
-```
-Final-Project/
-├── MAUT_Application/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── views/
-│   ├── assets/
-│   └── index.php
-├── database/
-│   └── database.sql
-└── README.md
 ```
 
 - **MAUT_Application/**: Contains the application source code.
